@@ -1,0 +1,19 @@
+{
+  "_hinweis": "Der Arbeitsstand, den die News zeigen. Platzhalter aus dem Entwurf des Users vom 2026-08-17 — Titel, Termin und Schritte schreibt er selbst. Eine Liste, damit spaeter jedes Werk seinen eigenen Stand haben kann; angezeigt wird der erste.",
+  "items": [
+    {
+      "id": "ws_001",
+      "eta": "HERBST 2026",
+      "title": "03 · Schatten der Asche",
+      "bandLabel": "BAND I",
+      "bandDone": 2,
+      "bandTotal": 5,
+      "steps": [
+        { "id": "entwurf", "label": "Entwurf", "note": "April", "state": "done" },
+        { "id": "rohtext", "label": "Rohtext", "note": "Juli", "state": "done" },
+        { "id": "korrektur", "label": "Korrektur", "note": "läuft", "state": "running" },
+        { "id": "bilder", "label": "Illustration", "note": "offen", "state": "todo" }
+      ]
+    }
+  ]
+}

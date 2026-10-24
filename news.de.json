@@ -1,0 +1,81 @@
+{
+  "items": [
+    {
+      "id": "news_005",
+      "date": "2026-08-06",
+      "tag": "Update",
+      "title": "Der Reader blättert jetzt wie ein Buch",
+      "imageId": null,
+      "lede": "Seitenmodus mit echtem Umblättern, ein Lesezeichen für jeden Modus – und am Kapitelende eine Fläche, die zeigt, was sich gerade geöffnet hat.",
+      "paras": [
+        "Wer im Seitenmodus liest, blättert von jetzt an in beide Richtungen, und es sieht in beide Richtungen nach einer echten Buchseite aus. Der Umbruch wird dabei nicht geschätzt, sondern gemessen: Dieselbe Technik, die den Text setzt, rechnet vorher aus, wie viel auf eine Seite passt. Deshalb wird keine Zeile mehr am unteren Rand abgeschnitten – auch dann nicht, wenn die Schriftgröße mitten im Kapitel wechselt.",
+        "Seiten- und Buchmodus merken sich ihre Stelle getrennt. Wer zwischen beiden hin- und herwechselt, landet nicht wieder am Anfang, sondern dort, wo er in diesem Modus zuletzt war. Auf der Kapitelkarte steht die Stelle als feiner Balken – gleich, in welchem Modus sie entstanden ist.",
+        "Am Ende eines Kapitels steht die Abschlussfläche. Sie zählt auf, welche Einträge im Kompendium sich mit diesem Kapitel geöffnet haben, und führt mit einem Tap dorthin. Was noch zu ist, bleibt zu und verrät auch seinen Titel nicht – gelesen wird der Reihe nach.",
+        "Als Nächstes ist der Bereich an der Reihe, in dem dieser Text gerade steht: Meldungen mit Aufmacher, Liste und Detailansicht. Dieser Artikel ist ein Platzhalter und wird ersetzt, sobald es wirklich etwas zu melden gibt."
+      ],
+      "voice": "„Das Blättern war die letzte Stelle, an der sich die App nach App anfühlte.\""
+    },
+    {
+      "id": "news_001",
+      "date": "2026-07-24",
+      "tag": "Update",
+      "title": "Kapitel 3 — „Schatten der Asche\" in Arbeit",
+      "imageId": null,
+      "lede": "Das dritte Kapitel nimmt Form an: neue Schauplätze, ein stillerer Erzählton und die ersten Zeichnungen für Band II.",
+      "paras": [
+        "Seit einigen Wochen arbeiten wir am dritten Kapitel. Es führt Yui aus dem Glasturm heraus — in einen Wald, der nur noch aus Asche und Erinnerung besteht.",
+        "Erzählerisch ist es das dichteste Kapitel bisher: weniger Dialog, mehr Stille. Dafür testen wir ein langsameres Tempo-Profil, das sich in den Einstellungen anpassen lässt.",
+        "Die ersten Zeichnungen erscheinen in den kommenden Wochen und schalten sich frei, sobald Band II beginnt."
+      ],
+      "voice": "„Weniger Dialog, mehr Stille. Ich hoffe, es hält.\""
+    },
+    {
+      "id": "news_002",
+      "date": "2026-07-18",
+      "tag": "Event",
+      "title": "Sommer-Artbook angekündigt",
+      "imageId": null,
+      "lede": "Alle Illustrationen aus Band I in voller Auflösung — inklusive verworfener Entwürfe.",
+      "paras": [
+        "Das Artbook sammelt jede Illustration aus Band I, ergänzt um Skizzen und Fassungen, die es nicht ins Kapitel geschafft haben.",
+        "Es erscheint diesen Sommer und liegt danach dauerhaft im Archiv bereit."
+      ]
+    },
+    {
+      "id": "news_003",
+      "date": "2026-07-05",
+      "tag": "Hinweis",
+      "title": "Kurze Wartung am Wochenende",
+      "imageId": null,
+      "lede": "Samstag zwischen 02:00 und 05:00 Uhr lassen sich keine neuen Kapitel laden.",
+      "paras": [
+        "Wir stellen die Auslieferung der Kapitel-Dateien um. Bereits geladene Kapitel bleiben offline lesbar.",
+        "Lesefortschritt und freigeschaltete Einträge bleiben unberührt."
+      ]
+    },
+    {
+      "id": "news_004",
+      "date": "2026-06-29",
+      "tag": "Update",
+      "title": "Neue Sprachausgabe für Ren",
+      "imageId": null,
+      "lede": "Kapitel 2 wurde neu eingesprochen — näher, ruhiger, mit mehr Raum zwischen den Sätzen.",
+      "paras": [
+        "Rens Stimme war vielen zu distanziert. Die Neuaufnahme setzt stärker auf Zurückhaltung.",
+        "Wer Kapitel 2 schon gelesen hat, kann es jederzeit erneut öffnen — der Fortschritt bleibt erhalten."
+      ]
+    },
+    {
+      "id": "news_006",
+      "date": "2026-06-11",
+      "tag": "Event",
+      "title": "Lesung zum Start von Band I",
+      "imageId": null,
+      "lede": "Eine Stunde „Der erste Riss\" in voller Länge, danach als Aufzeichnung verfügbar.",
+      "paras": [
+        "Zum Start von Band I lesen wir das erste Kapitel komplett — mit Musik und Anmerkungen zur Entstehung.",
+        "Die Aufzeichnung bleibt abrufbar und ist im Archiv unter „Der Riss\" verlinkt."
+      ]
+    }
+  ]
+}

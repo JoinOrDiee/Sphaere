@@ -1,0 +1,60 @@
+# Prüft bei jedem Speichern, ob die Dateien heil sind.
+#
+# Der Grund: Diese Dateien werden im Browser getippt, auch am iPhone, und ein
+# vergessenes Komma macht sie unlesbar. Die App fiele dann still auf ihre
+# eigene Fassung zurück — der Leser merkte nichts, der Autor aber auch nicht.
+# Deshalb hier ein rotes Kreuz, solange etwas nicht stimmt.
+name: Dateien prüfen
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  pruefen:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: JSON lesen und Felder nachzaehlen
+        run: |
+          python3 - <<'PY'
+          import json, sys, pathlib, re
+
+          fehler = []
+
+          def pruefe(pfad, pflicht):
+              text = pathlib.Path(pfad).read_text(encoding="utf-8")
+              try:
+                  daten = json.loads(text)
+              except json.JSONDecodeError as e:
+                  fehler.append(f"{pfad}: unlesbar — {e}")
+                  return
+              listen = [v for v in daten.values() if isinstance(v, list)]
+              if not listen or not listen[0]:
+                  fehler.append(f"{pfad}: keine Eintraege — die App wuerde sie nicht annehmen")
+                  return
+              for i, eintrag in enumerate(listen[0]):
+                  for feld in pflicht:
+                      if feld not in eintrag:
+                          fehler.append(f"{pfad}: Eintrag {i} fehlt '{feld}'")
+              ids = [e.get("id") for e in listen[0] if "id" in e]
+              doppelt = {i for i in ids if ids.count(i) > 1}
+              if doppelt:
+                  fehler.append(f"{pfad}: id kommt mehrfach vor: {sorted(doppelt)}")
+              for e in listen[0]:
+                  d = e.get("date")
+                  if d is not None and not re.fullmatch(r"\d{4}-\d{2}-\d{2}", str(d)):
+                      fehler.append(f"{pfad}: '{d}' ist kein Datum im Format JJJJ-MM-TT")
+
+          for pfad in sorted(pathlib.Path(".").glob("news.*.json")):
+              pruefe(pfad, ["id", "date", "tag", "title", "lede", "paras"])
+          for pfad in sorted(pathlib.Path(".").glob("workshop.*.json")):
+              pruefe(pfad, ["id"])
+
+          if fehler:
+              print("\n".join(fehler))
+              sys.exit(1)
+          print("Alles heil.")
+          PY
