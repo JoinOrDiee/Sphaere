@@ -3,15 +3,15 @@
   "items": [
     {
       "id": "ws_001",
-      "eta": "HERBST 2026",
+      "eta": "WINTER 2027",
       "title": "01 · TEST TITEL",
       "bandLabel": "BAND I",
-      "bandDone": 2,
+      "bandDone": 4,
       "bandTotal": 5,
       "steps": [
         { "id": "entwurf", "label": "Entwurf", "note": "April", "state": "done" },
         { "id": "rohtext", "label": "Rohtext", "note": "Juli", "state": "done" },
-        { "id": "korrektur", "label": "Korrektur", "note": "läuft", "state": "running" },
+        { "id": "korrektur", "label": "Korrektur", "note": "läuft", "state": "done" },
         { "id": "bilder", "label": "Illustration", "note": "offen", "state": "todo" }
       ]
     }
